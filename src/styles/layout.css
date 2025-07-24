@@ -1,0 +1,33 @@
+main {
+  max-width: 54.375rem;
+  margin-inline: auto;
+  padding: 5rem 4rem;
+  display: flex;
+  flex-direction: column;
+
+  header {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+
+    p {
+      font: var(--text-md);
+      color: var(--content-secondary);
+    }
+
+    .input-date {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+
+      .arrow-down {
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+      }
+    }
+  }
+}
