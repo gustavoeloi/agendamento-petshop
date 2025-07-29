@@ -1,0 +1,75 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+
+  .modal-content {
+    background: var(--bg-tertiary);
+    max-width: 29.8125rem;
+    padding: 2.375rem 2.5rem;
+    border-radius: 12px;
+    backdrop-filter: blur(2px);
+
+    h2 {
+      font: var(--font-title);
+    }
+
+    p {
+      color: var(--content-secondary);
+    }
+
+    label,
+    p {
+      font: var(--label-md);
+    }
+
+    form {
+      margin-block: 2.375rem 2.5rem;
+
+      .input-field {
+        width: 100%;
+        margin-bottom: 4px;
+      }
+
+      .input-icon {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: transparent;
+        border: 1px solid var(--border-primary);
+        border-radius: 8px;
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+      }
+
+      .input-icon input {
+        border: none;
+        outline: none;
+        background: transparent;
+        font: var(--text-md);
+        color: #fff;
+        font-size: 16px;
+      }
+
+      textarea {
+        background: transparent;
+        border: 1px solid var(--border-primary);
+        padding: 0.75rem;
+        font: var(--text-md);
+        color: #fff;
+        margin-bottom: 1rem;
+      }
+
+      .btn-schedule {
+        align-self: flex-end;
+      }
+    }
+  }
+}

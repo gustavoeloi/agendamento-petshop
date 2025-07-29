@@ -140,7 +140,77 @@
           </div>
         </section>
       </div>
-      <button id="new-schedule">Agendar Curso</button>
+      <button class="btn-schedule">Agendar Curso</button>
     </main>
+    <!-- Modal -->
+    <div class="modal">
+      <div class="modal-content">
+        <h2>Agende um atendimento</h2>
+        <p>Preencha os dados do cliente para realizar o agendamento</p>
+
+        <form>
+          <label for="client">Nome do Tutor</label>
+          <div class="input-icon">
+            <i
+              ><img
+                src="./src/assets/images/User--Streamline-Solar.svg"
+                alt="Cliente"
+            /></i>
+            <input
+              type="text"
+              placeholder="Helena de Sousa"
+              id="client"
+              name="client"
+              class="input-field"
+              required
+            />
+          </div>
+
+          <label for="pet">Nome do Pet</label>
+          <div class="input-icon">
+            <i
+              ><img
+                src="./src/assets/images/Pet-Paw--Streamline-Core.svg"
+                alt="pet"
+            /></i>
+            <input
+              type="text"
+              placeholder="Cheddar"
+              id="pet"
+              name="pet"
+              class="input-field"
+              required
+            />
+          </div>
+
+          <label for="phone">Telefone</label>
+          <div class="input-icon">
+            <i
+              ><img
+                src="./src/assets/images/Phone--Streamline-Solar.svg"
+                alt="phone"
+            /></i>
+            <input
+              type="text"
+              placeholder="(00) 0 0000-0000"
+              id="phone"
+              name="phone"
+              class="input-field"
+              required
+            />
+          </div>
+
+          <label for="description">Descrição do serviço</label>
+          <textarea
+            name="description"
+            id="description"
+            class="input-field"
+            placeholder="banho e tosa"
+          ></textarea>
+
+          <button class="btn-schedule">Agendar</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

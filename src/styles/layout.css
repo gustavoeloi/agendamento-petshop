@@ -1,3 +1,18 @@
+.btn-schedule {
+  background: var(--content-brand);
+  text-transform: uppercase;
+  font: var(--label-lg);
+  border: none;
+  border-radius: 12px;
+  padding: 0.875rem 1.5rem;
+  cursor: pointer;
+  transition: ease-in 0.3s;
+}
+
+.btn-schedule:hover {
+  background: var(--bg-highlights);
+}
+
 main {
   max-width: 54.375rem;
   margin-inline: auto;
@@ -16,6 +31,7 @@ main {
     top: 0;
     left: 0;
     border-bottom-right-radius: 1rem;
+    z-index: 100;
 
     p {
       text-transform: uppercase;
@@ -24,22 +40,10 @@ main {
     }
   }
 
-  #new-schedule {
+  .btn-schedule {
     position: fixed;
     bottom: 10px;
     right: 10px;
-    background: var(--content-brand);
-    text-transform: uppercase;
-    font: var(--label-lg);
-    border: none;
-    border-radius: 12px;
-    padding: 0.875rem 1.5rem;
-    cursor: pointer;
-    transition: ease-in 0.3s;
-  }
-
-  #new-schedule:hover {
-    background: var(--bg-highlights);
   }
 
   header {
