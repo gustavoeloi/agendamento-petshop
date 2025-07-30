@@ -1,10 +1,10 @@
 .modal {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  display: flex;
+  height: 100vh;
+  display: none;
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.2);
@@ -13,7 +13,7 @@
   .modal-content {
     background: var(--bg-tertiary);
     max-width: 29.8125rem;
-    padding: 2.375rem 2.5rem;
+    padding: 2.375rem 2.5rem 0 2.375rem;
     border-radius: 12px;
     backdrop-filter: blur(2px);
 
@@ -31,8 +31,6 @@
     }
 
     form {
-      margin-block: 2.375rem 2.5rem;
-
       .input-field {
         width: 100%;
         margin-bottom: 4px;
@@ -47,6 +45,7 @@
         border-radius: 8px;
         padding: 0.75rem;
         margin-bottom: 1rem;
+        justify-content: space-around;
       }
 
       .input-icon input {
@@ -67,9 +66,39 @@
         margin-bottom: 1rem;
       }
 
-      .btn-schedule {
-        align-self: flex-end;
+      .input-datetime {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        align-items: center;
       }
+
+      .input-wrapper {
+        position: relative;
+        display: inline-block;
+      }
+
+      .input-wrapper .arrow {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+      }
+
+      .btn-schedule {
+        display: block;
+        margin-left: auto;
+        margin-bottom: 2.375rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .modal {
+    .modal-content {
+      max-width: 21.875rem;
     }
   }
 }

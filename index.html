@@ -28,7 +28,7 @@
           </p>
         </div>
         <div class="input-date">
-          <input type="date" />
+          <input type="date" class="filter-date" />
           <img
             src="src/assets/images/Calendar-Minimalistic--Streamline-Solar.svg"
             class="arrow-down"
@@ -207,6 +207,56 @@
             class="input-field"
             placeholder="banho e tosa"
           ></textarea>
+
+          <div class="input-datetime">
+            <div>
+              <label for="date">Data</label>
+              <div class="input-icon">
+                <i
+                  ><img
+                    src="./src/assets/images/Calendar-Minimalistic--Streamline-Solar.svg"
+                    alt="ícone calendario"
+                /></i>
+                <div class="input-wrapper">
+                  <input
+                    type="date"
+                    id="date"
+                    name="date"
+                    class="input-field"
+                  />
+                  <img
+                    src="./src/assets/images/arrow-down.svg"
+                    alt="seta pra baixo"
+                    class="arrow"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <label for="time">Hora</label>
+              <div class="input-icon">
+                <i
+                  ><img
+                    src="./src/assets/images/Clock-Circle--Streamline-Solar.svg"
+                    alt="ícone calendario"
+                /></i>
+                <div class="input-wrapper">
+                  <input
+                    type="time"
+                    id="time"
+                    name="time"
+                    class="input-field"
+                  />
+                  <img
+                    src="./src/assets/images/arrow-down.svg"
+                    alt="seta pra baixo"
+                    class="arrow"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
 
           <button class="btn-schedule">Agendar</button>
         </form>

@@ -54,11 +54,16 @@ input[type="date"] {
   border-radius: 8px;
   font: var(--label-sm);
   position: relative;
-  padding: 0.75rem;
+  /* padding: 0.75rem; */
   text-align: left;
 }
 
-input[type="date"]::-webkit-calendar-picker-indicator {
+.filter-date {
+  padding: 0.75rem;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
   color: transparent;
   background: none;
   z-index: 1;
