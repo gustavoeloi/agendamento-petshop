@@ -16,6 +16,7 @@
 main {
   max-width: 54.375rem;
   margin-inline: auto;
+  height: 100vh;
   padding: 5rem 4rem;
   display: flex;
   gap: 2rem;
