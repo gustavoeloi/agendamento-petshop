@@ -11,3 +11,5 @@ import "./styles/layout.css";
 // js
 import "./modules/modal.js";
 import "./modules/filterDate.js";
+import "./modules/form/submit.js";
+import "./page-load.js";
