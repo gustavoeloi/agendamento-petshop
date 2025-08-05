@@ -1,3 +1,5 @@
-export function schedulesDay({ date }) {
-  console.log(`Dia do agendamento é: ${date}`);
+import { scheduleFetchByDay } from "../../services/fetch-schedule-by-day";
+
+export async function schedulesDay({ date }) {
+  const dailySchedules = await scheduleFetchByDay(date);
 }

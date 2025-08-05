@@ -1,18 +1,11 @@
 {
   "schedules": [
     {
-      "id": "5a26",
+      "id": 1754412886621,
       "name": "Gustavo Henrique Eloi Domingues",
       "petName": "Téo",
-      "description": "banho e tosa",
-      "when": "2025-08-05T15:09:00.000Z"
-    },
-    {
-      "id": "78c0",
-      "name": "José da Silva",
-      "petName": "Bob",
-      "description": "Vacinação",
-      "when": "2025-08-06T17:30:00.000Z"
+      "description": "Banho e Tosa",
+      "when": "2025-08-05T15:18:00.000Z"
     }
   ]
 }
