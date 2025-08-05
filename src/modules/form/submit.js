@@ -27,9 +27,12 @@ form.onsubmit = async (event) => {
   const phone = phoneInput.value;
   const description = descriptionInput.value;
 
+  const id = new Date().getTime();
+
   const when = dayjs(`${inputDate.value}T${inputTime.value}`).toDate();
 
   await newSchedule({
+    id,
     name,
     petName,
     phone,
