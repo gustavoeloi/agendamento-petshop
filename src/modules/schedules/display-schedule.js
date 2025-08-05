@@ -38,7 +38,16 @@ export function schedulesDisplay({ dailySchedules }) {
       pRemove.textContent = "Remover agendamento";
 
       li.append(pTime, pName, pType, pRemove);
-      periodAfternoon.append(li);
+
+      const hour = dayjs(schedule.when).hour();
+
+      if (hour <= 12) {
+        periodMorning.appendChild(li);
+      } else if (hour >= 12 && hour <= 18) {
+        periodAfternoon.appendChild(li);
+      } else {
+        periodEvening.appendChild(li);
+      }
     });
   } catch (error) {
     console.log(error);
