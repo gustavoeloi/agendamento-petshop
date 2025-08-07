@@ -91,6 +91,10 @@
         margin-left: auto;
         margin-bottom: 2.375rem;
       }
+
+      .list-remove {
+        cursor: pointer;
+      }
     }
   }
 }

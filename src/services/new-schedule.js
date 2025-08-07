@@ -1,3 +1,4 @@
+import { schedulesDay } from "../modules/schedules/load";
 import { apiConfig } from "./api-config";
 
 export async function newSchedule({
@@ -23,6 +24,7 @@ export async function newSchedule({
         when,
       }),
     });
+    schedulesDay();
     alert("Agendamento realizado com sucesso!");
   } catch (error) {
     console.log(error);

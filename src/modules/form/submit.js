@@ -1,5 +1,6 @@
 import dayjs from "dayjs";
 import { newSchedule } from "../../services/new-schedule";
+const modal = document.querySelector(".modal");
 
 const form = document.querySelector("form");
 
@@ -29,7 +30,9 @@ form.onsubmit = async (event) => {
 
   const id = new Date().getTime();
 
-  const when = dayjs(`${inputDate.value}T${inputTime.value}`).toDate();
+  const dateTimeString = `${inputDate.value}T${inputTime.value}:00`;
+
+  const when = dayjs(dateTimeString);
 
   await newSchedule({
     id,
@@ -38,5 +41,13 @@ form.onsubmit = async (event) => {
     phone,
     description,
     when,
-  });
+  })
+    .then(() => {
+      nameInput.value = "";
+      petNameInput.value = "";
+      phoneInput.value = "";
+      descriptionInput.value = "";
+      modal.classList.add("hidde-modal");
+    })
+    .catch((error) => console.log(error));
 };
