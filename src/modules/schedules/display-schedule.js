@@ -36,6 +36,7 @@ export function schedulesDisplay({ dailySchedules }) {
     pRemove.classList.add("list-remove");
     pRemove.textContent = "Remover agendamento";
 
+    li.setAttribute("data-id", schedule.id);
     li.append(pTime, pName, pType, pRemove);
 
     const hour = dayjs(schedule.when).hour();
@@ -49,14 +50,3 @@ export function schedulesDisplay({ dailySchedules }) {
     }
   });
 }
-
-/*
-              <li class="schedule-list-item">
-                <p class="list-time">09:00</p>
-                <p class="list-name">
-                  <span class="list-petname">Thor / </span>Fernanda Costa
-                </p>
-                <p class="list-type">Vacinação</p>
-                <p class="list-remove">Remover agendamento</p>
-              </li>
-*/
